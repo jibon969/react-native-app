@@ -4,7 +4,7 @@ const About = () => {
     return (
         <View style={styles.contactContainer}>
             <View style={styles.contact}>
-                <Text style={styles.contactTitle}>Hello, About </Text>
+                <Text style={styles.contactTitle}>About </Text>
             </View>
         </View>
     )
