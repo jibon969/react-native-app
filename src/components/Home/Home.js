@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <View style={styles.homeContainer}>
             <View style={styles.contact}>
-                <Text style={styles.homeTitle}>Hello, Home </Text>
+                <Text style={styles.homeTitle}>Home</Text>
             </View>
         </View>
     )

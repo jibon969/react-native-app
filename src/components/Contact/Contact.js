@@ -4,7 +4,7 @@ const Contact = () => {
     return (
         <View style={styles.contactContainer}>
             <View style={styles.contact}>
-                <Text style={styles.contactTitle}>Hello, Contact </Text>
+                <Text style={styles.contactTitle}>Contact </Text>
             </View>
         </View>
     )
