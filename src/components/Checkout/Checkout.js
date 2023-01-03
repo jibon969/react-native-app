@@ -1,4 +1,4 @@
-import React, {useContext, useEffect, useState} from 'react';
+import React from 'react';
 import {
     View,
     KeyboardAvoidingView,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
         paddingTop: 10,
         paddingBottom: 10,
         borderRadius: 5,
-        backgroundColor: "#183153",
+        backgroundColor: "#551E18",
         color: "#FFF"
     },
     totalCost: {
@@ -337,12 +337,12 @@ const styles = StyleSheet.create({
     },
     placeAnOrder: {
         padding: 7,
-        backgroundColor: "#183153",
+        backgroundColor: "#551E18",
         textAlign: "center",
         borderWidth: 1,
         borderRadius: 8,
         fontWeight: "bold",
-        borderColor: "#183153",
+        borderColor: "#551E18",
         color: "#FFF",
         marginBottom: 10
     },
