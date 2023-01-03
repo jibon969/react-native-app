@@ -1,5 +1,5 @@
 import {View, StyleSheet, Text} from 'react-native'
-import CategoryByConcern from '../Category/CategoryByConcern'
+import CategoryByConcern from '../Category/ByConcern'
 
 const Home = () => {
     return (

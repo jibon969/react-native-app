@@ -77,9 +77,7 @@ const Invoice = ({navigation}) => {
                         </View>
 
                         <View style={styles.downloadIInvoice}>
-                            <TouchableOpacity onPress={() => {
-                                Linking.openURL(`http://157.245.204.157/invoices/list/${'bella'}`)
-                            }}>
+                            <TouchableOpacity>
                                 <Text style={styles.downloadInvoiceButton}>Print Invoice</Text>
                             </TouchableOpacity>
                         </View>
@@ -163,25 +161,25 @@ const styles = StyleSheet.create({
     },
     downloadInvoiceButton: {
         padding: 7,
-        backgroundColor: "#183153",
+        backgroundColor: "#551E18",
         color: "#FFF",
         textAlign: "center",
         borderWidth: 1,
         borderRadius: 8,
         fontWeight: "bold",
-        borderColor: "#183153",
+        borderColor: "#551E18",
         marginTop: 20,
         overflow: "hidden",
     },
     shopMore: {
         padding: 7,
-        backgroundColor: "#183153",
+        backgroundColor: "#551E18",
         color: "#FFF",
         textAlign: "center",
         borderWidth: 1,
         borderRadius: 8,
         fontWeight: "bold",
-        borderColor: "#183153",
+        borderColor: "#551E18",
         marginTop: 20,
         marginBottom: 20,
         overflow: "hidden",

@@ -1,6 +1,6 @@
 import {useEffect, useState, useContext} from "react";
 import {SafeAreaView, View, StyleSheet, Text, Platform, ScrollView, Alert, Linking} from 'react-native';
-import ByConcern from '../../src/components/Category/CategoryByConcern';
+import ByConcern from '../components/Category/ByConcern';
 
 const HomeScreen = ({navigation}) => {
 
