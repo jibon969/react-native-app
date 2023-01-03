@@ -3,15 +3,13 @@ import {SafeAreaView, View, StyleSheet, Text, Platform, ScrollView, TouchableOpa
 
 
 const ProductDetailScreen = ({navigation}) => {
-
     return (
         <SafeAreaView style={styles.productDetailContainer}>
-
             <View style={styles.productDetailWrap}>
                 <ScrollView>
                     <View style={styles.productDetailContent}>
                         <Text style={styles.productDetailMainTitle}>Lorem ipsum dolor sit.</Text>
-                        <Image source={require('../../src/assets/google.png')} style={styles.productCardImage}/>
+                        <Image source={require('../../src/assets/product/8.png')} style={styles.productDetailImage}/>
                         <View style={{marginBottom: 10}}/>
                         <View style={{flexDirection: "row"}}>
                             <View style={{width: "75%", marginBottom: 20}}>
@@ -297,7 +295,9 @@ const styles = StyleSheet.create({
     },
     paginationDotActive: {backgroundColor: "#183153"},
     paginationDotInactive: {backgroundColor: "gray"},
-    carousel: {flex: 1},
+    carousel: {
+        flex: 1
+    },
 
 });
 
