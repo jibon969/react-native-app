@@ -22,7 +22,7 @@ const CartScreen = ({navigation}) => {
                     </View>
                 </View>
                 {/*Proceed to Order*/}
-                <TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('CheckoutStack')}>
                     <View style={styles.proceedOrder}>
                         <Text style={styles.proceedOrderTitle}>Proceed to Order </Text>
                     </View>
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
         flexDirection: "row",
         flexWrap: "wrap",
         padding: 5,
-        backgroundColor: "#293352",
+        backgroundColor: "#c67977",
         marginLeft: 5,
         marginRight: 5,
         marginBottom: 6,
@@ -81,7 +81,7 @@ const styles = StyleSheet.create({
 
     proceedOrder: {
         padding: 10,
-        backgroundColor: "#E04F54",
+        backgroundColor: "#551E18",
         marginLeft: 5,
         marginRight: 5,
         marginBottom: 8,

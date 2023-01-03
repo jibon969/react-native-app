@@ -19,6 +19,12 @@ export const screens = {
 
     CartStack: 'CartStack',
     Cart: 'Cart',
+
+    CheckoutStack: 'CheckoutStack',
+    Checkout: 'Checkout',
+
+    InvoiceStack: 'InvoiceStack',
+    Invoice: 'Invoice',
 };
 
 export const routes = [
@@ -109,5 +115,37 @@ export const routes = [
         showInDrawer: false,
         icon: (focused) =>
             <FontAwesome name="shopping-cart" size={focused ? 20 : 20} color={focused ? 'black' : '#969696'}/>,
+    },
+
+    // Checkout Process
+    {
+        name: screens.CheckoutStack,
+        focusedRoute: screens.CheckoutStack,
+        title: 'Checkout',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.Checkout,
+        focusedRoute: screens.CheckoutStack,
+        title: 'Checkout',
+        showInTab: false,
+        showInDrawer: false,
+    },
+
+    // InvoiceStack ======================
+    {
+        name: screens.InvoiceStack,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.Invoice,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
+        showInTab: false,
+        showInDrawer: false,
     },
 ];

@@ -1,10 +1,11 @@
 import {View, StyleSheet, Text} from 'react-native'
+import CategoryByConcern from '../Category/CategoryByConcern'
 
 const Home = () => {
     return (
         <View style={styles.homeContainer}>
             <View style={styles.contact}>
-                <Text style={styles.homeTitle}>Home</Text>
+                <CategoryByConcern/>
             </View>
         </View>
     )
