@@ -1,10 +1,10 @@
 import {View, StyleSheet, Text} from 'react-native'
 
-const Contact = () => {
+const ProductDetail = () => {
     return (
         <View style={styles.contactContainer}>
             <View style={styles.contact}>
-                <Text style={styles.contactTitle}>Contact</Text>
+                <Text style={styles.contactTitle}>Product Detail </Text>
             </View>
         </View>
     )
@@ -31,4 +31,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default Contact;
+export default ProductDetail;
