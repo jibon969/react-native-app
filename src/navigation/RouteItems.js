@@ -22,6 +22,9 @@ export const screens = {
 
     CheckoutStack: 'CheckoutStack',
     Checkout: 'Checkout',
+
+    InvoiceStack: 'InvoiceStack',
+    Invoice: 'Invoice',
 };
 
 export const routes = [
@@ -126,6 +129,22 @@ export const routes = [
         name: screens.Checkout,
         focusedRoute: screens.CheckoutStack,
         title: 'Checkout',
+        showInTab: false,
+        showInDrawer: false,
+    },
+
+    // InvoiceStack ======================
+    {
+        name: screens.InvoiceStack,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.Invoice,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
         showInTab: false,
         showInDrawer: false,
     },

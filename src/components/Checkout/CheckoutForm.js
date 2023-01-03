@@ -81,7 +81,7 @@ const CheckoutForm = ({navigation}) => {
                     </Text>
                 </View>
                 <View>
-                    <TouchableOpacity onPress={() => navigation.navigate("TermsAndConditionStack")}>
+                    <TouchableOpacity>
                         <Text style={{color: "blue", fontSize: 13}}>Terms & Conditions</Text>
                     </TouchableOpacity>
                 </View>

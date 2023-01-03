@@ -7,6 +7,7 @@ import ProductListStackNavigator from './stack-navigators/ProductListStackNaviga
 import ProductDetailStackNavigator from './stack-navigators/ProductDetailStackNavigator'
 import CartStackNavigator from './stack-navigators/CartStackNavigator'
 import CheckoutStackNavigator from './stack-navigators/CheckoutStackNavigator'
+import InvoiceStackNavigator from './stack-navigators/InvoiceStackNavigator'
 
 const Tab = createBottomTabNavigator();
 
@@ -41,6 +42,7 @@ const BottomTabNavigator = () => {
             <Tab.Screen name={screens.ProductDetailStack} component={ProductDetailStackNavigator}/>
             <Tab.Screen name={screens.CartStack} component={CartStackNavigator}/>
             <Tab.Screen name={screens.CheckoutStack} component={CheckoutStackNavigator}/>
+            <Tab.Screen name={screens.InvoiceStack} component={InvoiceStackNavigator}/>
         </Tab.Navigator>
     )
 };
