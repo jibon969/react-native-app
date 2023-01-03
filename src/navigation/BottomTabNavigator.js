@@ -5,6 +5,7 @@ import {routes, screens} from './RouteItems'
 import HomeStackNavigator from './stack-navigators/HomeStackNavigator'
 import ProductListStackNavigator from './stack-navigators/ProductListStackNavigator'
 import ProductDetailStackNavigator from './stack-navigators/ProductDetailStackNavigator'
+import CartStackNavigator from './stack-navigators/CartStackNavigator'
 
 const Tab = createBottomTabNavigator();
 
@@ -37,6 +38,7 @@ const BottomTabNavigator = () => {
             <Tab.Screen name={screens.HomeStack} component={HomeStackNavigator}/>
             <Tab.Screen name={screens.ProductListStack} component={ProductListStackNavigator}/>
             <Tab.Screen name={screens.ProductDetailStack} component={ProductDetailStackNavigator}/>
+            <Tab.Screen name={screens.CartStack} component={CartStackNavigator}/>
         </Tab.Navigator>
     )
 };

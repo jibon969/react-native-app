@@ -1,4 +1,9 @@
 import * as React from 'react'
+import {FontAwesome} from '@expo/vector-icons';
+import {MaterialIcons} from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons';
+import {AntDesign} from '@expo/vector-icons';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export const screens = {
@@ -11,6 +16,9 @@ export const screens = {
 
     ProductDetailStack: 'ProductDetailStack',
     ProductDetail: 'ProductDetail',
+
+    CartStack: 'CartStack',
+    Cart: 'Cart',
 };
 
 export const routes = [
@@ -49,7 +57,7 @@ export const routes = [
         showInTab: true,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="list" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="list" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.ProductList,
@@ -58,7 +66,7 @@ export const routes = [
         showInTab: false,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="list" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="list" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
 
     // ProductDetail ===========================
@@ -70,7 +78,7 @@ export const routes = [
         showInTab: false,
         showInDrawer: true,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="phone" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
         name: screens.ProductDetail,
@@ -79,6 +87,27 @@ export const routes = [
         showInTab: false,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
-    }
+            <Icon name="phone" size={20} color={focused ? '#551E18' : '#000'}/>,
+    },
+
+    // Cart ===========================
+    {
+        name: screens.CartStack,
+        focusedRoute: screens.CartStack,
+        title: 'Cart',
+        showInTab: true,
+        showInDrawer: false,
+        icon: (focused) =>
+            <FontAwesome name="shopping-cart" size={focused ? 20 : 20} color={focused ? 'black' : '#969696'}/>,
+    },
+    // Tab
+    {
+        name: screens.Cart,
+        focusedRoute: screens.CartStack,
+        title: 'Cart',
+        showInTab: false,
+        showInDrawer: false,
+        icon: (focused) =>
+            <FontAwesome name="shopping-cart" size={focused ? 20 : 20} color={focused ? 'black' : '#969696'}/>,
+    },
 ];

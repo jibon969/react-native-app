@@ -52,7 +52,7 @@ const ProductDetailScreen = ({navigation}) => {
                             </View>
                             <View style={{width: "30%"}}>
 
-                                <TouchableOpacity>
+                                <TouchableOpacity onPress={() =>navigation.navigate('CartStack')}>
                                     <Text style={styles.addToCartButton}>
                                         Buy Now
                                     </Text>
