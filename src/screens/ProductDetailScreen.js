@@ -1,10 +1,10 @@
 import {StyleSheet, SafeAreaView} from 'react-native'
-import About from '../../src/components/About/About'
+import ProductDetail from '../components/ProductDetail/ProductDetail'
 
-const AboutScreen = () => {
+const ProductDetailScreen = () => {
     return (
         <SafeAreaView style={styles.contactArea}>
-            <About/>
+            <ProductDetail/>
         </SafeAreaView>
     )
 };
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default AboutScreen;
+export default ProductDetailScreen;
