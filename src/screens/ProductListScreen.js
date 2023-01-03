@@ -1,10 +1,10 @@
 import {StyleSheet, SafeAreaView} from 'react-native'
-import Contact from '../../src/components/Contact/Contact'
+import ProductList from '../components/ProductList/ProductList'
 
-const ContactScreen = () => {
+const ProductListScreen = () => {
     return (
         <SafeAreaView style={styles.contactArea}>
-            <Contact/>
+            <ProductList/>
         </SafeAreaView>
     )
 };
@@ -15,4 +15,4 @@ const styles = StyleSheet.create({
     }
 });
 
-export default ContactScreen;
+export default ProductListScreen;

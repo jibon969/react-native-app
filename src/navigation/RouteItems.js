@@ -1,14 +1,30 @@
 import * as React from 'react'
+import {FontAwesome} from '@expo/vector-icons';
+import {MaterialIcons} from '@expo/vector-icons';
+import {Ionicons} from '@expo/vector-icons';
+import {AntDesign} from '@expo/vector-icons';
+import {MaterialCommunityIcons} from '@expo/vector-icons';
 import Icon from 'react-native-vector-icons/FontAwesome'
 
 export const screens = {
     HomeTab: 'HomeTab',
     HomeStack: 'HomeStack',
     Home: 'Home',
-    ContactStack: 'ContactStack',
-    Contact: 'Contact',
-    AboutStack: 'AboutStack',
-    About: 'About',
+
+    ProductListStack: 'ProductListStack',
+    ProductList: 'ProductList',
+
+    ProductDetailStack: 'ProductDetailStack',
+    ProductDetail: 'ProductDetail',
+
+    CartStack: 'CartStack',
+    Cart: 'Cart',
+
+    CheckoutStack: 'CheckoutStack',
+    Checkout: 'Checkout',
+
+    InvoiceStack: 'InvoiceStack',
+    Invoice: 'Invoice',
 };
 
 export const routes = [
@@ -41,42 +57,95 @@ export const routes = [
     },
 
     {
-        name: screens.ContactStack,
-        focusedRoute: screens.ContactStack,
-        title: 'Contact Us',
+        name: screens.ProductListStack,
+        focusedRoute: screens.ProductListStack,
+        title: 'ProductList',
         showInTab: true,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="list" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
-        name: screens.Contact,
-        focusedRoute: screens.ContactStack,
-        title: 'Contact Us',
+        name: screens.ProductList,
+        focusedRoute: screens.ProductListStack,
+        title: 'ProductList',
         showInTab: false,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="list" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
 
-    // About ===========================
+    // ProductDetail ===========================
 
     {
-        name: screens.AboutStack,
-        focusedRoute: screens.AboutStack,
-        title: 'About',
+        name: screens.ProductDetailStack,
+        focusedRoute: screens.ProductDetail,
+        title: 'ProductDetail',
         showInTab: false,
         showInDrawer: true,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
+            <Icon name="phone" size={20} color={focused ? '#551E18' : '#000'}/>,
     },
     {
-        name: screens.About,
-        focusedRoute: screens.AboutStack,
-        title: 'About',
+        name: screens.ProductDetail,
+        focusedRoute: screens.ProductDetailStack,
+        title: 'ProductDetail',
         showInTab: false,
         showInDrawer: false,
         icon: (focused) =>
-            <Icon name="phone" size={30} color={focused ? '#551E18' : '#000'}/>,
-    }
+            <Icon name="phone" size={20} color={focused ? '#551E18' : '#000'}/>,
+    },
+
+    // Cart ===========================
+    {
+        name: screens.CartStack,
+        focusedRoute: screens.CartStack,
+        title: 'Cart',
+        showInTab: true,
+        showInDrawer: false,
+        icon: (focused) =>
+            <FontAwesome name="shopping-cart" size={focused ? 20 : 20} color={focused ? 'black' : '#969696'}/>,
+    },
+    // Tab
+    {
+        name: screens.Cart,
+        focusedRoute: screens.CartStack,
+        title: 'Cart',
+        showInTab: false,
+        showInDrawer: false,
+        icon: (focused) =>
+            <FontAwesome name="shopping-cart" size={focused ? 20 : 20} color={focused ? 'black' : '#969696'}/>,
+    },
+
+    // Checkout Process
+    {
+        name: screens.CheckoutStack,
+        focusedRoute: screens.CheckoutStack,
+        title: 'Checkout',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.Checkout,
+        focusedRoute: screens.CheckoutStack,
+        title: 'Checkout',
+        showInTab: false,
+        showInDrawer: false,
+    },
+
+    // InvoiceStack ======================
+    {
+        name: screens.InvoiceStack,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
+        showInTab: false,
+        showInDrawer: true,
+    },
+    {
+        name: screens.Invoice,
+        focusedRoute: screens.InvoiceStack,
+        title: 'Invoice',
+        showInTab: false,
+        showInDrawer: false,
+    },
 ];

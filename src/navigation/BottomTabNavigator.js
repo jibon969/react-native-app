@@ -3,8 +3,11 @@ import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import {Text, StyleSheet, View} from 'react-native'
 import {routes, screens} from './RouteItems'
 import HomeStackNavigator from './stack-navigators/HomeStackNavigator'
-import ContactStackNavigator from './stack-navigators/ContactStackNavigator'
-import AboutStackNavigator from './stack-navigators/AboutStackNavigator'
+import ProductListStackNavigator from './stack-navigators/ProductListStackNavigator'
+import ProductDetailStackNavigator from './stack-navigators/ProductDetailStackNavigator'
+import CartStackNavigator from './stack-navigators/CartStackNavigator'
+import CheckoutStackNavigator from './stack-navigators/CheckoutStackNavigator'
+import InvoiceStackNavigator from './stack-navigators/InvoiceStackNavigator'
 
 const Tab = createBottomTabNavigator();
 
@@ -35,8 +38,11 @@ const BottomTabNavigator = () => {
     return (
         <Tab.Navigator screenOptions={tabOptions}>
             <Tab.Screen name={screens.HomeStack} component={HomeStackNavigator}/>
-            <Tab.Screen name={screens.ContactStack} component={ContactStackNavigator}/>
-            <Tab.Screen name={screens.AboutStack} component={AboutStackNavigator}/>
+            <Tab.Screen name={screens.ProductListStack} component={ProductListStackNavigator}/>
+            <Tab.Screen name={screens.ProductDetailStack} component={ProductDetailStackNavigator}/>
+            <Tab.Screen name={screens.CartStack} component={CartStackNavigator}/>
+            <Tab.Screen name={screens.CheckoutStack} component={CheckoutStackNavigator}/>
+            <Tab.Screen name={screens.InvoiceStack} component={InvoiceStackNavigator}/>
         </Tab.Navigator>
     )
 };
