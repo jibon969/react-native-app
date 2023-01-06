@@ -1,7 +1,6 @@
 import React, {createRef} from 'react'
 import {SafeAreaView, StatusBar, StyleSheet} from 'react-native'
 import {NavigationContainer} from '@react-navigation/native'
-
 import DrawerNavigator from './src/navigation/DrawerNavigator'
 
 // store reference to navigation object
