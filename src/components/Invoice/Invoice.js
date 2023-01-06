@@ -1,6 +1,5 @@
 import {SafeAreaView, View, StyleSheet, Text, Platform, ScrollView, TouchableOpacity, Linking} from 'react-native'
 import React from "react";
-import {BASE_URL} from "../../api/api";
 import {FontAwesome} from "@expo/vector-icons";
 
 const Invoice = ({navigation}) => {
