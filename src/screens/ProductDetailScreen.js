@@ -14,8 +14,9 @@ const ProductDetailScreen = ({navigation}) => {
                         <View style={{flexDirection: "row"}}>
                             <View style={{width: "75%", marginBottom: 20}}>
                                 <View style={{flexDirection: "row"}}>
-                                    <Text style={styles.productDetailHealthTips}>Health tips
-                                        : Lorem ipsum dolor sit.</Text>
+                                    <Text style={styles.productDetailHealthTips}>
+                                        Health tips : Lorem ipsum dolor sit.
+                                    </Text>
                                 </View>
                             </View>
                             <View style={{width: "18%"}}>
@@ -24,8 +25,7 @@ const ProductDetailScreen = ({navigation}) => {
                                     <View style={{flexDirection: "row"}}>
                                         <View>
                                             <TouchableOpacity>
-                                                <Text
-                                                    style={styles.plusButtonDis}>-</Text>
+                                                <Text style={styles.plusButtonDis}>-</Text>
                                             </TouchableOpacity>
                                         </View>
                                         <TouchableOpacity>
