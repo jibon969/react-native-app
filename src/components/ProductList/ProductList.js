@@ -7,8 +7,9 @@ const ProductList = ({navigation}) => {
         <View>
             <View style={styles.container}>
                 <View style={styles.productCard}>
-                    <TouchableOpacity
-                        onPress={() => navigation.navigate('ProductDetailStack')}>
+                    <TouchableOpacity onPress={() => navigation.navigate('ProductDetailStack', {
+                            screen: 'ProductDetail'
+                        })}>
                         {/*<Image source={{uri: product.image}} style={styles.productCardImage}/>*/}
                         <Image source={require('../../assets/google.png')} style={styles.productCardImage}/>
                         {/*<Text style={styles.productCardOfferTitle}>{product.discount} %</Text>*/}
